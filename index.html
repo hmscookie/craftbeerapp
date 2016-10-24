@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ontario Craft Beer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta property="og:title" content="Flowie">
+<meta property="og:type" content="business.business">
+<meta property="og:image" content="img/plant_hero.jpeg">
+<meta property="og:url" content="http://flowie.com">
+<meta property="og:description" content="Flowie provides beautiful domestic flowers and plants to happy customers around the globe.">
+​
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Flowie">
+<meta name="twitter:image" content="img/plant_hero.jpeg">
+<meta name="twitter:url" content="http://flowie.com">
+<meta name="twitter:description" content="Flowie provides beautiful domestic flowers and plants to happy customers around the globe.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Rye" rel="stylesheet">
+  <script id="myTemplate" type="x-handlebars-template">
+    <div class="beerResults wrapper">
+      <div class="beerContainer">
+          <h2>{{name}}</h2>
+          <h3>Tasting Note: {{style}}</h3>
+          <h3>Style: {{tertiary_category}}</h3>
+          {{#if image_thumb_url}}
+            <img src="{{image_thumb_url}}" alt="" />
+            {{else}}
+            <img src="styles/Images/rsz_21creativesouthbeer-01_copy.png"
+          {{/if}}
+      </div>
+    </div>
+  </script>
+  <script id="myTemplate2" type="x-handlebars-template">
+    <button class="morBeer">Try again? </button>
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+        <h1 id="pageTitle">Ontario Craft Beer Picker</h1>
+        <h3 class="sarah">Created by <a href="http://www.sarahkarsh.com">Sarah Karsh</a><h3>
+  </div>
+  <main class="landingPage">
+    <header>
+    </header>
+    <div class="wrapper">
+      <form action="">
+        <fieldset class="top">
+          <h2>Want some beer?</h2>
+          <div>
+            <input type="radio" name= "seasonal" value="all" id="seasonal2">
+            <label class="hvr-border-fade" for="seasonal2">all the beer  💀</label>
+          </div>
+          <div>
+            <input type="radio" name= "seasonal" value="seasonalBeer" id="seasonal1">
+            <label class="hvr-border-fade" for="seasonal1">seasonal beer 🍁</label>
+          </div>
+          <h2>How do you like it?</h2>
+            <div>
+              <input type="radio" name="typeOfBeer" value="light" id="flavour1">
+              <label class="hvr-border-fade" for="flavour1">light 🌈 </label>
+              
+              <input type="radio" name="typeOfBeer" value="full" id="flavour2">
+              <label class="hvr-border-fade" for="flavour2">full  🍺 </label>
+              
+              <input type="radio" name="typeOfBeer" value="hoppy" id="flavour3">
+              <label class="hvr-border-fade" for="flavour3">hoppy  🌿 </label>
+
+              <input type="radio" name="typeOfBeer" value="fruity" id="flavour4">
+               <label class="hvr-border-fade" for="flavour4">fruity 🍍</label>
+
+              <input type="radio" name="typeOfBeer" value="medium" id="flavour5">
+               <label class="hvr-border-fade" for="flavour5">medium 👽</label>
+              
+              <input type="radio" name="typeOfBeer" value="malty" id="flavour6">
+               <label class="hvr-border-fade" for="flavour6">malty 💩</label>
+          </div>
+          <div class="submitContainer"> 
+            <input type="submit" value="Find me a beer" name="submit" id="submit" class="submit"> <!-- calculate and move t o next page -->
+          </div>
+        </fieldset>
+      </form>
+      <img class="cat" src="styles/Images/rsz_1halloween_icons-01.png" alt="cute cat wearing a bowtie">
+    </div>
+  </main>
+  <section class="wrapper resultsPage">
+  </section>
+  <div class="whoknows2 wrapper"> </div>
+  <footer class="wrapper">
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</body>
+</html>

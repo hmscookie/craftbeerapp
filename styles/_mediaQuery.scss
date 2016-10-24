@@ -1,0 +1,92 @@
+@media (max-width: 1000px) {
+	form{
+		margin-top:1.5rem;
+	}
+	div.wrapper {
+		width:90%;
+	}
+	img.cat {
+		bottom:5%;
+	}
+	.beerContainer {
+		max-width:50%;
+		margin:0 auto;
+		min-height: initial;
+		margin-bottom:10px;
+		h2 {
+			min-height: initial;
+		}
+	}
+}
+
+@media (max-width: 890px) {
+	#pageTitle {
+		padding-top: 0;
+		font-size: 5rem;
+	}
+	img.cat {
+		bottom:2%;
+	}
+}
+
+@media (max-width: 740px) {
+	fieldset {
+		width:80%;
+		margin-top:0px;
+	}
+	img.cat {
+		bottom:10%;
+	}
+	.beerContainer {
+		max-width:70%;
+	}
+}
+
+@media (max-width: 600px) {
+	img.cat {
+		height:100px;
+		bottom:10%;
+	}
+	.beerContainer {
+		min-width:230px;
+		max-width:90%;
+	}
+}
+
+@media (max-width: 520px) {
+	fieldset{
+		h2{
+			margin-top:0;
+			margin-bottom:1rem;
+		}
+	}
+}
+
+@media (max-width: 416px) {
+	fieldset{
+		h2{
+			font-size:3.5rem;
+			padding-left:0;
+			padding-right:0;
+		}
+	}
+	.cat {
+		display:none;
+	}
+}
+
+@media (max-width: 370px) {
+	#pageTitle {
+		font-size:4rem;
+	}
+	// label{
+	// 	font-size:2rem;
+	// }
+	// fieldset {
+	// 	h2 {
+	// 		font-size:2.2rem;
+	// 	}
+	// }
+}
+
+
